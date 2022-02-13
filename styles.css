@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: black;
+    font-style: bold;
+    color: white;
+    background-color: lightblue;
+    margin: 2px;
+}
+
+body {
+    font-size: 16px;
+    color: black;
+    background-color: lightblue;
+    font-family: 'Oxygen', sans-serif;
+}
+
+h2 {
+    font-style: italic;
+    font-size: 18px;
+    margin-left: 10px;
+    padding-bottom: -10px;
+}
+
+p {
+    background-color: lightsteelblue;
+    padding: 60px;
+    padding-top: -10px;
+    margin-top: -10px;
+    margin: 20px;
+    position: static;
+}
+
+
+/** HEADER **/
+
+#header-nav {
+    background-color: lightgreen;
+    border-radius: 0;
+    border: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+#logo-img {
+    background: url('../images/restaurant-logo_large.png') no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+    padding-top: 20px;
+}
+
+.navbar-brand h1 {
+    /* Restaurant name */
+    font-family: 'Lora', serif;
+    color: darkblue;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px gainsboro;
+    margin-top: 2px;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+.navbar-brand a:hover,
+.navbar-brand a:focus {
+    text-decoration: none;
+}
+
+.navbar-brand p {
+    /* Kosher cert */
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+}
+
+.navbar-brand p span {
+    /* Star-K */
+    vertical-align: middle;
+}
+
+#nav-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#nav-list a {
+    color: darkslateblue;
+    text-align: center;
+}
+
+#nav-list a:hover {
+    background: #E7E7E7;
+}
+
+#nav-list a span {
+    font-size: 1.8em;
+}
+
+#phone {
+    margin-top: 5px;
+}
+
+#phone a {
+    /* Phone number */
+    text-align: right;
+    padding-bottom: 0;
+}
+
+#phone div {
+    /* We Deliver */
+    color: #557c3e;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
+    border: 1px solid darkgreen;
+}
+
+.navbar-header button .navbar-toggle {
+    clear: both;
+    margin-top: -30px;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+
+/* END HEADER */
+
+@media (max-width: 768px) {
+    .visible-xs {
+        display: hidden;
+    }
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+
+@media (max-width: 479px) {
+    /* Header */
+    .navbar-brand h1 {
+        /* Restaurant name */
+        padding-top: 5px;
+        font-size: 6vw;
+    }
+    /* End Header */
+    /* Home page */
+    #menu-tile,
+    #specials-tile {
+        width: 280px;
+        margin: 0 auto 15px;
+        position: relative;
+    }
+}
